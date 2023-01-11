@@ -571,13 +571,15 @@ img {
 .menu__mail {
   font-size: 24px;
   line-height: 1.17;
-  color: var(--accent-color);
+  color: var(--primary-text-color);
 }
 
 .menu__socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .menu__socials--link {
@@ -1315,11 +1317,17 @@ img {
 
 .footer__address {
   min-width: 231px;
+  margin-top: 20px;
   margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer__address {
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__address {
+    text-align: left;
   }
 }
 
